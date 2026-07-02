@@ -1,0 +1,43 @@
+#include <bits/stdc++.h>
+using namespace std;
+
+int main() {
+	int t,x,n,j;
+	string s;
+	int c;
+	cin>>t;
+	
+	while(t--){
+	    cin>>x>>n;
+	    cin>>s;
+	    
+	   c=0;
+	   /*for(int i=0;i<x;i++){
+	       for(j=i;j<i+n && j<x ;j++){
+	           
+	           if(s[j]=='B'){
+	                c++;
+	                i=i+n-1;
+	                break;
+	           }
+	           else if(j==(i+n)){
+	               i=i+j;
+	           }
+	       }
+	       
+	       
+	   }*/
+	   
+	   for(int i=0;i<x;i++){
+	       
+	       if(s[i]=='B'){
+	           c++;
+	           i=i+n-1;
+	       }
+	   }
+	   cout<<c<<endl;
+	    
+	    
+	}
+
+}
